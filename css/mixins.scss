@@ -1,0 +1,15 @@
+//font-size: calc((100vw - Vmin)/(Vmax - Vmin) * (Fmax - Fmin) + Fmin);
+@mixin adaptiveFonts($property, $Fmin, $Fmax, $Vmin, $Vmax) {
+	#{$property}: $Fmin;
+
+	@media (min-width: ($Vmin + px)) {
+		$stepOne: ($Fmax - $Fmin)/($Vmax - $Vmin);
+		$stepTwo: $Fmin - $stepOne * $Vmin;
+		$stepTree: $stepTwo * 1px;
+		#{$property}:calc(#{$stepOne} * 100vw + #{$stepTree});
+	}
+
+	@media (min-width: ($Vmax + px)) {
+		#{$property}: $Fmax;
+	}
+}

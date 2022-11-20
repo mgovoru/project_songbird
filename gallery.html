@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Songbird</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<h1 class="header__title">Song<span>bird</span></h1>
+					<div>
+						<a class="header__button button" href="index.html">Game</a>
+						<a class="header__button button" href="home.html">Home</a>
+					</div>
+				</div>
+				<nav class="header__menu menu">
+					<ul class="menu__items">
+						<li class="menu__item">Разминка</li>
+						<li class="menu__item">Воробьиные</li>
+						<li class="menu__item">Лесные птицы</li>
+						<li class="menu__item">Певчие птицы</li>
+						<li class="menu__item">Хищные птицы</li>
+						<li class="menu__item">Морские птицы</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<div class="main__gallery gallery">
+					<div class="grid-block">
+						<div class="gallery__content">
+							<div class="gallery__block">
+								<div class="gallery__prev">&larr;</div>
+								<div class="gallery__image -ibg"><img
+										src="https://live.staticflickr.com//65535//49298804222_474cfe8682.jpg" alt=""
+										class="gallery__img"></div>
+								<div class="gallery__next">&rarr;</div>
+								<div class="gallery__info">
+									<span class="gallery__name"></span><span class="gallery__kind"></span>
+									<div class="gallery__player audio-player">
+										<div class="timeline">
+											<div class="progress"></div>
+										</div>
+										<div class="controls">
+											<div class="play-container">
+												<div class="toggle-play playpro size-small">
+												</div>
+											</div>
+											<div class="time-play">
+												<div class="current">0:00 / </div>
+												<div class="length">1:00</div>
+											</div>
+											<div class="volume-container">
+												<div class="volume-button source size-small">
+												</div>
+												<div class="volume-slider">
+													<div class="volume-percentage"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gallery__text">
+								Козодой – неприметная птица, известная благодаря своему голосу. Песня козодоя звучит как
+								монотонная трель похожая на
+								тарахтение мотоцикла. Такое дребезжание слышно от заката до рассвета, его тональность,
+								частота и громкость изменяются.
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container"></div>
+		</footer>
+	</div>
+</body><script src="js/player.js" type="module"></script>
+<script src="js/gallery.js" type="module"></script>
+
+</html>

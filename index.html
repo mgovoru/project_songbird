@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Songbird</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<h1 class="header__title">Song<span>bird</span></h1>
+					<div>
+						<a class="header__button button" href="gallery.html">Gallery</a>
+						<a class="header__button button" href="home.html">Home</a>
+					</div>
+					<div class="header__score">Score: <span class="header__result">0</span></div>
+				</div>
+				<nav class="header__menu menu">
+					<ul class="menu__items">
+						<li class="menu__item">Разминка</li>
+						<li class="menu__item">Воробьиные</li>
+						<li class="menu__item">Лесные птицы</li>
+						<li class="menu__item">Певчие птицы</li>
+						<li class="menu__item">Хищные птицы</li>
+						<li class="menu__item">Морские птицы</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<div class="main__grid">
+					<div class="main__question grid-block question">
+						<div class="question__image -ibg"><img src="./assets/1.jpg" alt="" class="question__img"></div>
+						<div class="question__info">
+							<div class="question__name">*******</div>
+							<div class="question__player audio-player">
+								<div class="timeline">
+
+									<div class="progress"></div>
+								</div>
+								<div class="controls">
+									<div class="play-container">
+
+										<div class="toggle-play playpro size">
+
+										</div>
+									</div>
+									<div class="time-play">
+										<div class="current">0:00 / </div>
+										<div class="length">1:00</div>
+									</div>
+
+									<div class="volume-container">
+										<div class="volume-button source size">
+
+										</div>
+
+										<div class="volume-slider">
+											<div class="volume-percentage"></div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="main__options grid-block choice">
+						<form action="#" class="choice__items">
+							<div class="choice__item"><input class="choice__input" value="0" name="choice-bird"
+									type="radio" id="one"><label for="one" class="choice__label">Ворон</label></div>
+							<div class="choice__item"><input class="choice__input" value="1" name="choice-bird"
+									type="radio" id="two"><label for="two" class="choice__label">Журавль</label></div>
+							<div class="choice__item"> <input class="choice__input" value="2" name="choice-bird"
+									type="radio" id="tree"><label for="tree" class="choice__label">Ласточка</label>
+							</div>
+							<div class="choice__item"><input class="choice__input" value="3" name="choice-bird"
+									type="radio" id="four"><label for="four" class="choice__label">Козодой</label></div>
+							<div class="choice__item"><input class="choice__input" value="4" name="choice-bird"
+									type="radio" id="five"><label for="five" class="choice__label">Кукушка</label></div>
+							<div class="choice__item"><input class="choice__input" value="5" name="choice-bird"
+									type="radio" id="six"><label for="six" class="choice__label">Синица</label></div>
+							</ащкь>
+					</div>
+					<div class="main__answer grid-block answer">
+						<div class="answer__greeting">
+							<p>Послушайте плеер.</p>
+							Выберите птицу из списка
+						</div>
+						<div class="answer__content unvisible">
+							<div class="answer__block">
+								<div class="answer__image -ibg"><img
+										src="https://live.staticflickr.com//65535//49298804222_474cfe8682.jpg" alt=""
+										class="answer__img"></div>
+								<div class="answer__info">
+									<span class="answer__name"></span><span class="answer__kind"></span>
+									<div class="answer__player audio-player">
+										<div class="timeline">
+											<div class="progress"></div>
+										</div>
+										<div class="controls">
+											<div class="play-container">
+												<div class="toggle-play playpro size-small">
+												</div>
+											</div>
+											<div class="time-play">
+												<div class="current">0:00 / </div>
+												<div class="length">1:00</div>
+											</div>
+											<div class="volume-container">
+												<div class="volume-button source size-small">
+												</div>
+												<div class="volume-slider unvisible">
+													<div class="volume-percentage"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="answer__text">
+								Козодой – неприметная птица, известная благодаря своему голосу. Песня козодоя звучит как
+								монотонная трель похожая на
+								тарахтение мотоцикла. Такое дребезжание слышно от заката до рассвета, его тональность,
+								частота и громкость изменяются.
+							</div>
+						</div>
+					</div>
+					<div class="main__level grid-block">Next level</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container"></div>
+		</footer>
+	</div>
+</body>
+<script src="js/player.js" type="module"></script>
+<script src="js/script.js" type="module"></script>
+
+
+</html>
